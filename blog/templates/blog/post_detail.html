@@ -5,6 +5,7 @@
 
       <div class="media-body">
         <div class="article-metadata">
+          <a class="mr-2" href="{% 'user-posts' post.author.username %}">{{ object.author }}</a>
           <small class="text-muted">{{ object.date_objected|date:"F d, Y"}}</small>
           {% if object.author == user%}
             <div> 
